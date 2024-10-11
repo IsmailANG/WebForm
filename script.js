@@ -1,6 +1,6 @@
 // Fetch webinar dates when the page loads
 document.addEventListener('DOMContentLoaded', function () {
-    fetch('https://script.google.com/macros/s/AKfycbwv3wAdX7rSdGidcTJVdIrO8-CME1JDk5zzDrsiwQeJj2m-vE4cOPdO1x2huc_QpQw7aA/exec')
+    fetch('https://script.google.com/macros/s/AKfycbzlyxCOsTfDo2IncQgiSBAEiCL7pC0jqMaB6lWTA378/dev')
         .then(response => response.json())
         .then(dates => {
             let webinarOptions = '';
@@ -31,7 +31,7 @@ document.getElementById('contactForm').addEventListener('submit', function(event
     };
 
     // Send data to Google Sheets
-    fetch('https://script.google.com/macros/s/AKfycbwv3wAdX7rSdGidcTJVdIrO8-CME1JDk5zzDrsiwQeJj2m-vE4cOPdO1x2huc_QpQw7aA/exec', {
+    fetch('https://script.google.com/macros/s/AKfycbzlyxCOsTfDo2IncQgiSBAEiCL7pC0jqMaB6lWTA378/dev', {
         method: 'POST',
         mode: 'no-cors', // Prevents CORS issues for POST requests
         headers: {
