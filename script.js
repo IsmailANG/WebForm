@@ -39,7 +39,7 @@ document.getElementById('contactForm').addEventListener('submit', function(event
         },
         body: JSON.stringify(formData),
     }).then(() => {
-        alert("Thank you for registering! Your data has been saved.");
+        alert("Vielen Dank für Ihre Anmeldung! Ihre Daten wurden gespeichert.");
         document.getElementById('contactForm').reset(); // Reset the form
     }).catch(error => console.error('Error:', error));
 });
